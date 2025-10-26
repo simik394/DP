@@ -12,9 +12,9 @@ tags: []
 
 ## Další kroky
 - [ ] **Etapa A: Rešerše - konceptuální model GDB (do 30.6.2025)**
-  - [ ] Vyhledat a prostudovat relevantní literaturu a články o využití konceptuálních modelů pro návrh grafových databází.
-  - [ ] Zpracovat teoretický základ pro diplomovou práci, včetně definic klíčových pojmů.
-  - [ ] Vytvořit seznam relevantních zdrojů.
+  - [x] Vyhledat a prostudovat relevantní literaturu a články o využití konceptuálních modelů pro návrh grafových databází.
+  - [x] Zpracovat teoretický základ pro diplomovou práci, včetně definic klíčových pojmů.
+  - [x] Vytvořit seznam relevantních zdrojů.
 - [ ] **Etapa B: Dotazník – žádanosti údajů a funkcí (do 31.7.2025)**
   - [ ] Vytvořit formulář dotazníku pro potenciální uživatele.
   - [ ] Distribuovat dotazník mezi členy skautských oddílů.
