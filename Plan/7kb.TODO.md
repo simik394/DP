@@ -5,15 +5,33 @@ aliases:
 tags: []
 ---
 # PRIORITY
-- [ ] Dovyplnit Projektový záměr markdown verzi ve složce Plan.
-  - [ ] Identifikovat aktuální zaměření
-  - [ ] Zachovat aktuální zaměření bezezměny a s ohledem na přiměřený rozsah DP na VŠE v Praze navrhnout chzbějící části Projektového záměru
+- [x] Dovyplnit Projektový záměr markdown verzi ve složce Plan.
+  - [x] Identifikovat aktuální zaměření
+  - [x] Zachovat aktuální zaměření bezezměny a s ohledem na přiměřený rozsah DP na VŠE v Praze navrhnout chybějící části Projektového záměru
 - [ ] Pokračovat ve tvorbě tohoto projektu podle tasků v tomto souboru
-- [ ] sepsat zde do markdownového task listu s více úrovněmi jaké jsou další kroky postupu k dkonˇčení práce.
-- [ ] {pozor tento text je pouze placeholder pro následující úkol, který má být v rámci vyutváření DP údělán.}
 
-
-
+## Další kroky
+- [ ] **Etapa A: Rešerše - konceptuální model GDB (do 30.6.2025)**
+  - [ ] Vyhledat a prostudovat relevantní literaturu a články o využití konceptuálních modelů pro návrh grafových databází.
+  - [ ] Zpracovat teoretický základ pro diplomovou práci, včetně definic klíčových pojmů.
+  - [ ] Vytvořit seznam relevantních zdrojů.
+- [ ] **Etapa B: Dotazník – žádanosti údajů a funkcí (do 31.7.2025)**
+  - [ ] Vytvořit formulář dotazníku pro potenciální uživatele.
+  - [ ] Distribuovat dotazník mezi členy skautských oddílů.
+  - [ ] Sesbírat a vyhodnotit data z dotazníku.
+- [ ] **Etapa C: Implementace – nejžádanějších funkcionalit (do 30.9.2025)**
+  - [ ] Navrhnout schéma grafové databáze v Neo4j na základě výsledků rešerše a dotazníku.
+  - [ ] Vytvořit skript pro synchronizaci dat z Google Docs.
+  - [ ] Naplnit databázi testovacími daty.
+  - [ ] Implementovat základní dotazy pro prohledávání báze.
+- [ ] **Etapa D: Vyhodnocení (do 31.10.2025)**
+  - [ ] Připravit scénáře pro uživatelské testování.
+  - [ ] Uspořádat testování s vybranou skupinou uživatelů.
+  - [ ] Zpracovat zpětnou vazbu a identifikovat nejvyužívanější funkce.
+- [ ] **Etapa E: Tvorba dokumentace a doporučení (do 30.11.2025)**
+  - [ ] Napsat uživatelskou dokumentaci s příklady dotazů.
+  - [ ] Formulovat doporučení pro tvorbu GDB schémat.
+  - [ ] Zkompletovat text diplomové práce.
 
 # Nedůležité
 - [ ] nastavit clasp na OCI inatanci
