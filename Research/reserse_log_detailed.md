@@ -117,3 +117,35 @@ acích.
 
 ---
 *Prohledáno 13 zdrojů. Pokračuji v hledání...*
+
+---
+
+## 2025-10-27 (Pokračování)
+
+### Dotazy:
+13. `UML to graph schema transformation`
+14. `"conceptual model to neo4j" "best practices"`
+15. `object-oriented model to property graph`
+16. `neo4j data modeling guide from conceptual model`
+17. `modeling inheritance UML in Neo4j`
+18. `type hierarchies in neo4j`
+
+### Zjištění:
+-   Přímé "best practices" pro transformaci UML->Neo4j nejsou snadno dohledatelné, což potvrzuje relevanci tématu DP.
+-   Klíčový je článek od Marka Needhama (Neo4j Blog), který stanovuje základní pravidla 1:1 mapování (Entita->Uzel, Atribut->Vlastnost, Vztah->Vztah).
+-   Jádro problému leží v řešení pokročilých sémantických konstruktů (dědičnost, agregace, n-ární vztahy), kde existuje více validních řešení.
+-   Pro modelování dědičnosti/hierarchie v Neo4j byly identifikovány tři hlavní přístupy:
+    1.  **Více popisků (Multiple Labels):** Pro statické, taxonomické hierarchie.
+    2.  **Explicitní `IS_A` vztahy:** Pro dynamické hierarchie, kde se může struktura měnit.
+    3.  **Strom kategorií:** Pro modelování dědičnosti atributů.
+-   Volba mezi těmito přístupy je klíčový **rozhodovací bod**, který závisí na povaze dat a především na zamýšlených dotazech (query-driven design).
+
+### Nápady na další dotazy/klíčová slova:
+-   `graph database normalization vs denormalization`
+-   `representing n-ary relationships in property graphs patterns`
+-   `UML aggregation vs composition in Neo4j modeling`
+-   `time representation in graph databases patterns`
+-   `object to graph mapping academic paper survey`
+-   `conceptual model to logical graph model transformation rules`
+-   `Neo4j composite key implementation`
+-   `resolving many-to-many relationships graph best practices`
