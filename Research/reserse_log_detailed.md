@@ -149,3 +149,21 @@ acích.
 -   `conceptual model to logical graph model transformation rules`
 -   `Neo4j composite key implementation`
 -   `resolving many-to-many relationships graph best practices`
+
+---
+
+## 2025-11-01 (Pokračování)
+
+### Dotazy:
+19. `UML aggregation vs composition in Neo4j modeling`
+20. `neo4j cascade delete relationship`
+21. `enforcing lifecycle dependency neo4j`
+22. `graph modeling composition vs aggregation`
+
+### Zjištění:
+-   Jak **agregace**, tak **kompozice** se v Neo4j typicky modelují pomocí standardního vztahu `(parent)-[:HAS_A]->(child)` nebo podobně sémanticky pojmenovaného vztahu. Z pohledu čisté struktury grafu jsou nerozlišitelné.
+-   Klíčový rozdíl je v **sémantice životního cyklu**: u kompozice platí, že "dítě" (child) nemůže existovat bez "rodiče" (parent). Smazání rodiče musí nutně vést ke smazání dítěte.
+-   Tato sémantika se **nevynucuje na úrovni schématu** v Neo4j, ale na **aplikační/operační úrovni**.
+-   Standardním řešením je použití **transakčního smazání s kaskádou (cascade delete)**. Při operaci mazání uzlu, který je součástí kompozice, je nutné explicitně smazat i všechny jeho související "dětské" uzly v rámci jedné transakce.
+-   Některé knihovny a OGM (Object-Graph Mapper) nástroje mohou toto chování automatizovat, ale v čistém Cypheru je za to zodpovědný vývojář.
+-   **Závěr:** Rozdíl mezi agregací a kompozicí není ve způsobu, jak jsou *uloženy* v grafu, ale ve způsobu, jak jsou *spravovány* operacemi (především mazáním). Toto zjištění musí být v DP jasně uvedeno.

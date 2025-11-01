@@ -105,6 +105,30 @@ Na základě analýzy lze formulovat následující pracovní hypotézu:
 
 Tato hypotéza bude v další části práce ověřována na příkladech dalších UML konstruktů a následně demonstrována na praktickém modelu skautské domény.
 
+### 5.3 Příklad: Modelování agregace a kompozice (HAS-A)
+
+Agregace a kompozice reprezentují "whole-part" (celek-část) vztahy. Klíčový rozdíl mezi nimi v UML je závislost životního cyklu:
+- **Agregace (Aggregation):** Slabý vztah. Části mohou existovat i po zániku celku. (Např. Tým a Členové).
+- **Kompozice (Composition):** Silný vztah. Části jsou zničeny spolu s celkem. (Např. Auto a Motor).
+
+V Labeled-Property Graph modelu, jako je Neo4j, neexistuje vestavěný mechanismus, který by tyto dva typy vztahů na úrovni schématu rozlišoval. Rozdíl se tedy musí implementovat v logice datového modelu a operací.
+
+**Přístup k modelování:**
+
+Oba vztahy se modelují jako standardní sémantické vztahy. Volba názvu vztahu by měla jasně odrážet povahu vazby.
+- **Agregace:** `(:Team)-[:HAS_MEMBER]->(:Person)`
+- **Kompozice:** `(:Car)-[:CONSISTS_OF]->(:Engine)`
+
+**Rozhodovací bod a implementace:**
+
+Rozdíl se projeví až při operaci mazání. To představuje klíčový rozhodovací bod při návrhu aplikace.
+- **Pro agregaci:** Při smazání uzlu `Team` se jednoduše smaže jen tento uzel. Vztahy `HAS_MEMBER` zaniknou, ale uzly `Person` zůstanou nedotčeny.
+  - `MATCH (t:Team {name: 'MyTeam'}) DELETE t;` (POZOR: `DETACH DELETE` by smazalo i vztahy, ale ne členy)
+- **Pro kompozici:** Při smazání uzlu `Car` je **nutné** v rámci stejné transakce explicitně smazat i všechny jeho části. Toto je zodpovědnost aplikace nebo specifického Cypher dotazu.
+  - `MATCH (c:Car {vin: '123'})-[r:CONSISTS_OF]->(part) DETACH DELETE c, part;`
+
+Zatímco sémantický význam je v UML jasně daný, v grafovém modelu je přenesen z deklarativní úrovně (schéma) na imperativní úroveň (operace). To dává větší flexibilitu, ale zároveň klade větší nároky na disciplínu při vývoji.
+
 ## 6. Použité zdroje
 
 -   [Graph database - Wikipedia](https://en.wikipedia.org/wiki/Graph_database)

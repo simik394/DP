@@ -20,7 +20,7 @@ tags: []
     - [x] [A2.3] Identifikovat klíčové rozhodovací body v procesu transformace (hotovo pro dědičnost).
     - [x] [A2.4] Formulovat hypotézu o systematickém odvozování a hodnocení schémat.
     - [ ] **[A2.5] Hloubková analýza dalších UML konstruktů:**
-        - [ ] [A2.5.1] Analyzovat modelování **agregace a kompozice** (Aggregation, Composition).
+        - [x] [A2.5.1] Analyzovat modelování **agregace a kompozice** (Aggregation, Composition).
         - [ ] [A2.5.2] Analyzovat modelování **n-árních vztahů** (N-ary associations).
         - [ ] [A2.5.3] Prozkoumat reprezentaci **času a historie** v grafových modelech.
         - [ ] [A2.5.4] Hledat akademické zdroje pro **formální pravidla transformace** (Object to graph mapping).
