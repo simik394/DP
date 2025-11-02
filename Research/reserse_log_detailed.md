@@ -1,28 +1,17 @@
 # Detailní log rešerše
 
-Tento soubor dokumentuje proces rešerše pro diplomovou práci "Realizace báze zna
-lostí skautských programů".
+Tento soubor dokumentuje proces rešerše pro diplomovou práci "Realizace báze znalostí skautských programů".
 
 ## Strategie klíčových slov
 
-1.  **Základní přehled:** `graph data modeling`, `graph database schema design p
-atterns`, `conceptual to graph model transformation`.
-    *   **Odůvodnění:** Cílem je zopakovat základy a najít zdroje, které byly v
-první, povrchní rešerši přehlédnuty.
-2.  **Akademické zdroje:** `graph database modeling survey`, `property graph vs
-RDF comparison`, `graph database schema evolution`, `"graph data modeling" filet
-ype:pdf`.
-    *   **Odůvodnění:** Cílem je najít odborné články a "research papers" pro za
-jištění akademické hloubky práce.
-3.  **Pokročilé techniky:** `modeling hyperedges in property graphs`, `temporal
-graph data modeling`, `graph model refactoring`, `"node vs relationship" graph m
-odeling`.
-    *   **Odůvodnění:** Cílem je najít specifická řešení pro pokročilé problémy
-a designové vzory.
-4.  **Praktické příklady:** `Neo4j data modeling anti-patterns`, `graph modeling
- for social networks`, `knowledge graph schema design`.
-    *   **Odůvodnění:** Cílem je najít reálné příklady, osvědčené postupy a pou
-čení z chyb z praxe.
+1.  **Základní přehled:** `graph data modeling`, `graph database schema design patterns`, `conceptual to graph model transformation`.
+    *   **Odůvodnění:** Cílem je zopakovat základy a najít zdroje, které byly v první, povrchní rešerši přehlédnuty.
+2.  **Akademické zdroje:** `graph database modeling survey`, `property graph vs RDF comparison`, `graph database schema evolution`, `"graph data modeling" filetype:pdf`.
+    *   **Odůvodnění:** Cílem je najít odborné články a "research papers" pro zajištění akademické hloubky práce.
+3.  **Pokročilé techniky:** `modeling hyperedges in property graphs`, `temporal graph data modeling`, `graph model refactoring`, `"node vs relationship" graph modeling`.
+    *   **Odůvodnění:** Cílem je najít specifická řešení pro pokročilé problémy a designové vzory.
+4.  **Praktické příklady:** `Neo4j data modeling anti-patterns`, `graph modeling for social networks`, `knowledge graph schema design`.
+    *   **Odůvodnění:** Cílem je najít reálné příklady, osvědčené postupy a poučení z chyb z praxe.
 
 ---
 
@@ -31,8 +20,7 @@ a designové vzory.
 ### Dotaz 1: `graph database schema design patterns` (Google)
 
 1.  **URL:** https://hypermode.com/blog/database-architecture
-    *   **Název:** What is Graph Database Architecture? Exploring Schema and Mod
-els - Hypermode
+    *   **Název:** What is Graph Database Architecture? Exploring Schema and Models - Hypermode
     *   **Relevance:** Vysoká. Popisuje základní principy návrhu schématu.
     *   **Použití:** Použito pro úvodní kapitoly rešerše.
 
@@ -51,47 +39,35 @@ els - Hypermode
     *   **Relevance:** Střední. Zaměřeno na Memgraph, ale principy jsou obecné.
     *   **Použití:** Použito pro srovnání přístupů.
 5.  **URL:** https://hypermode.com/blog/graph-models
-    *   **Název:** What is Graph Data Modeling? Techniques and Best Practices -
-Hypermode
+    *   **Název:** What is Graph Data Modeling? Techniques and Best Practices - Hypermode
     *   **Relevance:** Vysoká. Podrobný článek s best practices.
     *   **Použití:** Použito pro sekci o osvědčených postupech.
 
 ### Dotaz 3: `"graph data modeling" filetype:pdf site:arxiv.org` (ArXiv)
 
-*   **Výsledek:** Žádné relevantní výsledky. Zkusím obecnější dotazy na jiných p
-latformách.
+*   **Výsledek:** Žádné relevantní výsledky. Zkusím obecnější dotazy na jiných platformách.
 
 ### Dotaz 4: `node vs relationship graph modeling` (Google)
 
-6.  **URL:** https://bigbear.ai/blog/property-graphs-is-it-a-node-a-relationship
--or-a-property/
-    *   **Název:** Property Graphs: Is it a Node, a Relationship, or a Property?
- - BigBear.ai
-    *   **Relevance:** Velmi vysoká. Přesně se zabývá klíčovou otázkou modelován
-í.
+6.  **URL:** https://bigbear.ai/blog/property-graphs-is-it-a-node-a-relationship-or-a-property/
+    *   **Název:** Property Graphs: Is it a Node, a Relationship, or a Property? - BigBear.ai
+    *   **Relevance:** Velmi vysoká. Přesně se zabývá klíčovou otázkou modelování.
     *   **Použití:** Bude tvořit jádro kapitoly o pokročilém modelování.
-7.  **URL:** https://aws.amazon.com/compare/the-difference-between-graph-and-rel
-ational-database/
-    *   **Název:** Graph vs Relational Databases - Difference Between Databases
-- AWS
-    *   **Relevance:** Střední. Spíše srovnání GDB a RDB, ale dotýká se i modelo
-vání.
+7.  **URL:** https://aws.amazon.com/compare/the-difference-between-graph-and-relational-database/
+    *   **Název:** Graph vs Relational Databases - Difference Between Databases - AWS
+    *   **Relevance:** Střední. Spíše srovnání GDB a RDB, ale dotýká se i modelování.
     *   **Použití:** Doplňující materiál.
 
 ### Dotaz 5: `Neo4j data modeling anti-patterns` (Google)
 
-8.  **URL:** https://neo4j.com/blog/cypher-and-gql/dark-side-neo4j-worst-practic
-es/
-    *   **Název:** Welcome to the Dark Side: Neo4j Worst Practices (& How to Avo
-id Them)
+8.  **URL:** https://neo4j.com/blog/cypher-and-gql/dark-side-neo4j-worst-practices/
+    *   **Název:** Welcome to the Dark Side: Neo4j Worst Practices (& How to Avoid Them)
     *   **Relevance:** Velmi vysoká. Konkrétní příklady, čemu se vyhnout.
-    *   **Použití:** Bude tvořit základ pro kapitolu o anti-patternech a osvědče
-ných postupech.
+    *   **Použití:** Bude tvořit základ pro kapitolu o anti-patternech a osvědčených postupech.
 
 ### Dotaz 6: `temporal graph data modeling` (Google Scholar)
 
-*   **Výsledek:** Žádné relevantní výsledky. Budu muset zkusit jiné dotazy a pla
-tformy.
+*   **Výsledek:** Žádné relevantní výsledky. Budu muset zkusit jiné dotazy a platformy.
 
 ### Dotaz 7: `graph database modeling survey` (Google)
 
@@ -99,8 +75,7 @@ tformy.
     *   **Název:** [2505.24758] Survey: Graph Databases - arXiv
     *   **Relevance:** Velmi vysoká. Aktuální přehledový článek.
     *   **Použití:** Klíčový zdroj pro teoretickou část.
-10. **URL:** https://repositorio.uchile.cl/bitstream/handle/2250/125044/ANGLES_R
-ENZO.pdf?sequence=1
+10. **URL:** https://repositorio.uchile.cl/bitstream/handle/2250/125044/ANGLES_RENZO.pdf?sequence=1
     *   **Název:** Survey of Graph Database Models - Repositorio UCHILE
     *   **Relevance:** Vysoká. Starší, ale velmi citovaný a foundational článek.
     *   **Použití:** Zdroj pro historický kontext a základní definice.
@@ -108,11 +83,9 @@ ENZO.pdf?sequence=1
     *   **Název:** Survey of Graph Database Models - DCC UChile
     *   **Relevance:** Vysoká. Podobné jako předchozí, ale jiná verze.
     *   **Použití:** Zkontrolovat rozdíly a případně doplnit informace.
-12. **URL:** https://www.semanticscholar.org/paper/Survey-of-graph-database-mode
-ls-Angles-Guti%C3%A9rrez/d57ca29d73272e139c04f118d5c3107dfb964596
+12. **URL:** https://www.semanticscholar.org/paper/Survey-of-graph-database-models-Angles-Guti%C3%A9rrez/d57ca29d73272e139c04f118d5c3107dfb964596
     *   **Název:** [PDF] Survey of graph database models - Semantic Scholar
-    *   **Relevance:** Vysoká. Opět odkaz na stejný článek, ale s metadaty o cit
-acích.
+    *   **Relevance:** Vysoká. Opět odkaz na stejný článek, ale s metadaty o citacích.
     *   **Použití:** Pomůže najít navazující práce.
 
 ---
@@ -167,3 +140,22 @@ acích.
 -   Standardním řešením je použití **transakčního smazání s kaskádou (cascade delete)**. Při operaci mazání uzlu, který je součástí kompozice, je nutné explicitně smazat i všechny jeho související "dětské" uzly v rámci jedné transakce.
 -   Některé knihovny a OGM (Object-Graph Mapper) nástroje mohou toto chování automatizovat, ale v čistém Cypheru je za to zodpovědný vývojář.
 -   **Závěr:** Rozdíl mezi agregací a kompozicí není ve způsobu, jak jsou *uloženy* v grafu, ale ve způsobu, jak jsou *spravovány* operacemi (především mazáním). Toto zjištění musí být v DP jasně uvedeno.
+
+---
+## 2025-11-01 (Dodatek - Zdroje k Agregaci/Kompozici)
+
+Tato sekce explicitně doplňuje zdroje použité pro zjištění z předchozího záznamu, aby se napravila chyba v dokumentaci.
+
+### Použité zdroje:
+-   **URL:** https://stackoverflow.com/questions/885937/what-is-the-difference-between-association-aggregation-and-composition
+    -   **Název:** What is the difference between association, aggregation and composition? - Stack Overflow
+    -   **Relevance:** Vysoká. Jasně vysvětluje sémantiku životního cyklu.
+-   **URL:** https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/
+    -   **Název:** UML Association vs Aggregation vs Composition - Visual Paradigm
+    -   **Relevance:** Vysoká. Definuje koncepty z pohledu UML.
+-   **URL:** https://www.geeksforgeeks.org/java/association-composition-aggregation-java/
+    -   **Název:** Association, Composition and Aggregation in Java - GeeksforGeeks
+    -   **Relevance:** Střední. Ukazuje, jak se princip řeší v OOP.
+-   **URL:** https://www.gleek.io/blog/aggregation-vs-composition
+    -   **Název:** UML Essentials: Aggregation vs Composition Explained - Gleek.io
+    -   **Relevance:** Střední. Dobré shrnutí a příklady.

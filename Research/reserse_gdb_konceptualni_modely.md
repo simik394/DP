@@ -139,3 +139,12 @@ Zatímco sémantický význam je v UML jasně daný, v grafovém modelu je přen
 -   [Neo4j Data Modeling Best Practices and Tips](https://neo4j.guide/article/Neo4j_Data_Modeling_Best_Practices_and_Tips.html)
 -   [Conceptual Model vs Graph Model - Mark Needham, Neo4j Blog (2014)](https://neo4j.com/blog/graph-database/conceptual-model-vs-graph-model/)
 -   [Modeling Categories in a Graph Database - Neo4j Blog (2010)](https://neo4j.com/blog/developer/modeling-categories-in-a-graph-database/)
+
+---
+### Dodatek: Zdroje k Agregaci a Kompozici
+
+Následující zdroje byly použity k formulaci závěrů o modelování agregace a kompozice. Ačkoliv se primárně nevěnují Neo4j, definují klíčový princip závislosti životního cyklu, který je nutné implementovat na aplikační úrovni.
+
+-   **Stack Overflow:** [What is the difference between association, aggregation and composition?](https://stackoverflow.com/questions/885937/what-is-the-difference-between-association-aggregation-and-composition) - Zdůrazňuje silnou závislost životního cyklu u kompozice.
+-   **Visual Paradigm:** [UML Association vs Aggregation vs Composition](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/) - Definuje a srovnává koncepty v kontextu UML.
+-   **GeeksforGeeks:** [Association, Composition and Aggregation in Java](https://www.geeksforgeeks.org/java/association-composition-aggregation-java/) - Poskytuje příklady implementace v OOP, jejichž principy jsou přenositelné do databázových transakcí.
